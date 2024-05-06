@@ -3,24 +3,13 @@ class Solution {
         int count = 0;
         if (num == 1) { return 0; }
         
-        while (true) {
-            if (count == 500) { 
-                count = -1; 
-                break;
-            } else if (num == 1) {
-                break;
-            }
+        for (int i = 0; i < 500; i++) {
+            if (num == 1) { return count; }
             
-            if (num % 2 == 0) { 
-                num /= 2; 
-            } 
-            else { 
-                num = num * 3 + 1; 
-            }
-            
+            num = (num % 2 == 0) ? num / 2 : num * 3 + 1;
             count++;
         }
         
-        return count;
+        return -1;
     }
 }
