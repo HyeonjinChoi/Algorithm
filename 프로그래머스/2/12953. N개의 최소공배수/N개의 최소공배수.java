@@ -1,5 +1,3 @@
-import java.util.stream.*;
-
 class Solution {
     public double solution(int[] arr) {
         int lcm = arr[0];
