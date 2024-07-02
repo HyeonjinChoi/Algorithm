@@ -1,6 +1,6 @@
 class Solution {
     public long solution(int n) {
-        if (n <= 1) return 1; 
+        if (n == 1) return 1; 
 
         long[] dp = new long[n + 1];
         dp[0] = 1; 
